@@ -10,7 +10,7 @@ function updateThemeButton() {
   const label = `Switch to ${dark ? "light" : "dark"} mode`;
   themeToggle.setAttribute("aria-label", label);
   themeToggle.title = label;
-  themeToggle.firstElementChild.textContent = dark ? "☀" : "☾";
+  // CSS switches the monochrome SVG icon to match the active theme.
 }
 themeToggle?.addEventListener("click", () => {
   const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";

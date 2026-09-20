@@ -1,5 +1,9 @@
 /* Theme overrides keep the blue feature panels and photography consistent. */
 :root { color-scheme:light; }
+.theme-toggle svg { width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.theme-toggle .theme-sun { display:none; }
+html[data-theme="dark"] .theme-toggle .theme-moon { display:none; }
+html[data-theme="dark"] .theme-toggle .theme-sun { display:block; }
 .theme-toggle { display:grid; place-items:center; width:36px; height:36px; flex-shrink:0; margin-left:24px; padding:0; border:1px solid var(--line); border-radius:50%; background:transparent; color:var(--ink); cursor:pointer; font:22px/1 Arial,sans-serif; }
 .theme-toggle:hover { background:var(--paper); }
 .theme-toggle:focus-visible { outline:2px solid var(--blue); outline-offset:4px; }
