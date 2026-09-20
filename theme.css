@@ -26,9 +26,18 @@ html[data-theme="dark"] .button { background:#075ce0; }
 html[data-theme="dark"] .academic-list article { border-bottom-color:var(--line); }
 @media (max-width:720px) { .theme-toggle { margin-left:12px; width:32px; height:32px; font-size:20px; } }
 @media (max-width:360px) { .site-header { padding-inline:12px; } nav { gap:12px; } }
-/* Decorative blue separators between navigation items and the theme toggle. */
-.site-header nav a + a::before { content:""; position:absolute; width:3px; height:3px; border-radius:50%; background:var(--blue); left:-19.5px; top:50%; transform:translateY(-50%); }
-.theme-toggle { position:relative; }
-.theme-toggle::before { content:""; position:absolute; width:3px; height:3px; border-radius:50%; background:var(--blue); left:-14px; top:50%; transform:translateY(-50%); }
-@media (max-width:720px) { .site-header nav a + a::before { left:-9.5px; } .theme-toggle::before { left:-8px; } }
-@media (max-width:360px) { .site-header nav a + a::before { left:-7.5px; } }
+/* Real decorative elements keep separators identical on every page. */
+.site-header nav { align-items:center; gap:16px; }
+.nav-dot { display:block; flex:0 0 3px; width:3px; height:3px; border-radius:50%; background:var(--blue); }
+.theme-separator { margin-left:16px; }
+.theme-toggle { margin-left:16px; }
+@media (max-width:720px) {
+  .site-header nav { gap:8px; }
+  .theme-separator { margin-left:8px; }
+  .theme-toggle { margin-left:8px; }
+}
+@media (max-width:360px) {
+  .site-header nav { gap:6px; }
+  .theme-separator { margin-left:6px; }
+  .theme-toggle { margin-left:6px; }
+}
