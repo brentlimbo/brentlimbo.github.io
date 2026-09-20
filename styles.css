@@ -20,6 +20,11 @@
 .info-section .info-grid article>p:last-child { grid-column:2; margin:0; line-height:1.6; }
 @media (max-width:850px) { .info-layout { grid-template-columns:1fr; gap:24px; } .info-photo { max-width:600px; width:100%; margin-inline:auto; } }
 /* Shared contact footer. */
+.site-footer#contact { padding:40px 0 20px; }
+.site-footer .footer-grid { gap:24px; }
+.site-footer .footer-links a { padding:11px 0; min-height:44px; }
+.site-footer .footer-bottom { margin-top:28px; padding-top:14px; }
+.site-footer h2.contact-heading { padding-bottom:12px; }
 .footer-name { color:var(--blue); margin:0; font-size:28px; font-weight:600; letter-spacing:-.04em; line-height:1.2; }
 .site-footer .contact-heading { color:var(--blue); font-size:16px; line-height:1.3; letter-spacing:0; margin:0; padding-bottom:20px; border-bottom:1px solid #373942; font-weight:600; }
 .footer-contact { min-width:0; }
