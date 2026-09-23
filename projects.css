@@ -1,0 +1,22 @@
+/* Shared featured-project visuals for Home and Projects. */
+.featured-cases { display:grid; gap:72px; }
+.featured-case { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:clamp(32px,5vw,80px); align-items:center; scroll-margin-top:96px; }
+.featured-case + .featured-case { padding-top:64px; border-top:1px solid var(--line); }
+.case-visual { position:relative; display:flex; align-items:center; justify-content:center; background:var(--paper); padding:28px; min-height:340px; transition:box-shadow .25s; }
+.case-visual img { display:block; width:100%; max-height:510px; object-fit:contain; }
+.case-visual:hover { box-shadow:0 14px 36px rgba(20,50,90,.16); }
+.document-label { position:absolute; bottom:12px; right:12px; padding:8px 12px; border-radius:20px; background:#101114; color:#fff; font:10px var(--mono); }
+.case-copy h2 { font-size:clamp(30px,3.4vw,48px); line-height:1.06; letter-spacing:-.055em; margin-bottom:18px; }
+.case-role { color:var(--blue); font-size:13px; line-height:1.5; margin-bottom:22px; }
+.case-description { color:var(--muted); font-size:16px; line-height:1.7; }
+.case-tags { display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:24px 0 30px; }
+.case-tags li { font-size:11px; border:1px solid var(--line); border-radius:20px; padding:7px 11px; }
+.pdf-note { display:block; color:var(--muted); margin-top:12px; font-size:11px; }
+.home-document { display:flex; align-items:center; justify-content:center; aspect-ratio:4 / 3; padding:16px; background:var(--paper); transition:transform .25s,box-shadow .25s; }
+.home-document img { display:block; width:100%; height:100%; object-fit:contain; }
+.home-category { display:block; margin-top:20px; font:10px var(--mono); text-transform:uppercase; letter-spacing:.08em; color:var(--blue); }
+.work-preview h3 { margin-top:10px; }
+.work-preview:hover .home-document { transform:translateY(-4px); box-shadow:0 12px 30px rgba(20,50,90,.12); }
+.work-preview:focus-visible,.case-visual:focus-visible { outline:2px solid var(--blue); outline-offset:5px; }
+@media (max-width:850px) { .featured-case { grid-template-columns:1fr; gap:28px; } .case-visual { min-height:0; padding:20px; } .featured-cases { gap:48px; } .featured-case + .featured-case { padding-top:48px; } }
+@media (prefers-reduced-motion:reduce) { .work-preview:hover .home-document { transform:none; } }
