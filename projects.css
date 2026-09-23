@@ -1,4 +1,18 @@
 /* Shared featured-project visuals for Home and Projects. */
+.academic-intro { color:var(--muted); font-size:15px; line-height:1.7; max-width:760px; margin:-16px 0 36px; }
+.academic-list article { grid-template-columns:42px minmax(0,1fr) minmax(0,1fr) 100px; gap:24px; }
+.academic-list h2 { line-height:1.35; }
+.academic-list div p { line-height:1.6; }
+.academic-list article>p { color:var(--muted); line-height:1.6; }
+.academic-list article>a { font-size:12px; font-weight:600; color:var(--blue); padding:12px 0; text-align:right; }
+.academic-list article>a small { display:block; font-size:10px; color:var(--muted); margin-top:6px; font-weight:400; }
+.academic-list article>a:focus-visible { outline:2px solid var(--blue); outline-offset:4px; }
+@media (max-width:800px) {
+  .academic-list article { grid-template-columns:26px minmax(0,1fr); gap:12px 16px; }
+  .academic-list article>p { display:block; grid-column:2; }
+  .academic-list article>a { grid-column:2; text-align:left; justify-self:start; }
+  .academic-list article>a small { display:inline; margin-left:10px; }
+}
 .featured-cases { display:grid; gap:72px; }
 .featured-case { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:clamp(32px,5vw,80px); align-items:center; scroll-margin-top:96px; }
 .featured-case + .featured-case { padding-top:64px; border-top:1px solid var(--line); }
