@@ -1,0 +1,5 @@
+# Preserve document and image bytes across Windows and GitHub checkouts.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
