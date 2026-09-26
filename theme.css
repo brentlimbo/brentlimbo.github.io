@@ -27,6 +27,12 @@ html[data-theme="dark"] .academic-list article { border-bottom-color:var(--line)
 @media (max-width:720px) { .theme-toggle { margin-left:12px; width:32px; height:32px; font-size:20px; } }
 @media (max-width:360px) { .site-header { padding-inline:12px; } nav { gap:12px; } }
 /* Real decorative elements keep separators identical on every page. */
+/* Keep all four page links and the theme control available on narrow screens. */
+@media (max-width:480px) {
+  .site-header { height:auto; min-height:86px; flex-wrap:wrap; padding:12px 20px; gap:14px 0; }
+  .site-header .wordmark { flex-basis:100%; }
+  .site-header nav { margin-left:0; flex:1; justify-content:space-between; }
+}
 .site-header nav { align-items:center; gap:16px; }
 .nav-dot { display:block; flex:0 0 3px; width:3px; height:3px; border-radius:50%; background:var(--blue); }
 .theme-separator { margin-left:16px; }

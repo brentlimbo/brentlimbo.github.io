@@ -1,0 +1,46 @@
+.closet-hero { padding-top:38px; }
+.closet-intro { display:grid; grid-template-columns:1.2fr 1fr; gap:7%; align-items:center; padding:64px 0 48px; }
+.closet-intro h1 { font-size:clamp(56px,6.5vw,96px); letter-spacing:-.07em; line-height:1; }
+.closet-lead { max-width:560px; color:var(--muted); font-size:18px; line-height:1.65; }
+.closet-actions { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+.closet-actions .button { margin:0; }
+.closet-brand { display:flex; flex-direction:column; justify-content:space-between; min-height:420px; padding:32px; background:#0969ff; color:#fff; }
+.closet-label { font:10px/1.6 var(--mono); text-transform:uppercase; letter-spacing:.1em; }
+.closet-brand strong { font-size:clamp(60px,6vw,90px); line-height:.88; letter-spacing:-.07em; padding:42px 0; }
+.closet-brand strong span { color:#0b0b0d; }
+.brand-bottom { display:flex; justify-content:space-between; align-items:end; font:11px/1.7 var(--mono); text-transform:uppercase; }
+.brand-arrow { font:56px/1 var(--sans); }
+.closet-brand:hover .brand-arrow { transform:translate(3px,-3px); }
+.closet-facts { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--ink); border-bottom:1px solid var(--line); padding:26px 0; gap:24px; }
+.closet-facts strong { display:block; color:var(--blue); font-size:30px; letter-spacing:-.04em; margin-bottom:8px; }
+.closet-facts span { color:var(--muted); font:11px/1.6 var(--mono); }
+.closet-story,.closet-archive { padding-top:88px; }
+.story-grid { display:grid; grid-template-columns:1fr 1fr; gap:8%; }
+.story-grid h2,.archive-heading h2 { font-size:clamp(34px,3.6vw,52px); letter-spacing:-.055em; line-height:1.08; }
+.story-grid p { color:var(--muted); line-height:1.75; font-size:16px; }
+.archive-heading { display:flex; justify-content:space-between; align-items:center; gap:48px; margin-bottom:24px; }
+.archive-heading p { max-width:380px; line-height:1.65; color:var(--muted); }
+.sold-gallery { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+.sold-photo { position:relative; aspect-ratio:1; overflow:hidden; background:var(--paper); }
+.sold-photo img { display:block; width:100%; height:100%; object-fit:contain; transition:transform .25s; }
+.sold-photo .sold-tag { position:absolute; top:12px; right:12px; background:#0b0b0d; color:white; border:0; }
+.sold-card .home-category { display:block; margin:18px 0 10px; color:var(--blue); font:10px var(--mono); text-transform:uppercase; }
+.sold-card h3 { font-size:21px; line-height:1.2; letter-spacing:-.04em; margin-bottom:12px; }
+.sold-view { font-size:12px; color:var(--blue); }
+.sold-card:hover img { transform:scale(1.035); }
+.sold-card:focus-visible { outline:2px solid var(--blue); outline-offset:5px; }
+.archive-extra { margin:28px 0 0; color:var(--muted); font-size:13px; }
+@media(max-width:900px) { .sold-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 18px; } }
+@media(max-width:480px) { .sold-gallery { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce) { .sold-card:hover img { transform:none; } }
+.sold-item { display:grid; grid-template-columns:48px 1fr 180px 56px; gap:20px; align-items:center; padding:26px 0; border-bottom:1px solid var(--line); }
+.item-number { font:11px var(--mono); color:var(--blue); }
+.sold-item h3 { font-size:24px; letter-spacing:-.04em; margin:0; }
+.item-category { font-size:12px; color:var(--muted); }
+.sold-tag { font:10px var(--mono); text-transform:uppercase; border:1px solid var(--line); border-radius:20px; padding:7px 10px; text-align:center; }
+.archive-link { margin-top:26px; }
+.closet-social { margin-top:88px; padding:36px; background:var(--paper); display:flex; justify-content:space-between; align-items:center; gap:32px; }
+.closet-social h2 { font-size:32px; letter-spacing:-.045em; margin:0; }
+.closet-brand:focus-visible,.closet-actions a:focus-visible,.archive-link:focus-visible { outline:2px solid var(--blue); outline-offset:5px; }
+@media(max-width:900px) { .closet-intro { grid-template-columns:1fr; gap:36px; } .closet-brand { min-height:340px; } .closet-brand strong { font-size:76px; } .story-grid { grid-template-columns:1fr; gap:16px; } .closet-social { flex-direction:column; align-items:flex-start; } }
+@media(max-width:600px) { .closet-hero .hero-topline { font-size:9px; gap:16px; } .closet-intro { padding-top:40px; } .closet-lead { font-size:16px; } .closet-facts { grid-template-columns:1fr; gap:20px; } .closet-facts strong { font-size:25px; } .closet-story,.closet-archive { padding-top:56px; } .archive-heading { display:block; } .sold-item { grid-template-columns:25px 1fr 56px; gap:12px; padding:20px 0; } .sold-item h3 { font-size:20px; } .item-category { grid-column:2; } .sold-tag { grid-column:3; grid-row:1; } .closet-social { padding:24px; margin-top:56px; } }
