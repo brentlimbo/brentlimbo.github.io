@@ -4,6 +4,15 @@
 .closet-lead { max-width:560px; color:var(--muted); font-size:18px; line-height:1.65; }
 .closet-actions { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
 .closet-actions .button { margin:0; }
+.closet-instagram { display:flex; align-items:center; gap:18px; flex-basis:100%; max-width:460px; margin-top:4px; padding:20px; border:1px solid var(--line); background:var(--paper); color:var(--ink); transition:border-color .2s,transform .2s; }
+.closet-instagram .instagram-icon { flex-shrink:0; }
+.closet-instagram-copy { display:grid; gap:5px; }
+.closet-instagram-copy small { font:10px/1.4 var(--mono); text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+.closet-instagram-copy strong { font-size:19px; font-weight:500; }
+.closet-instagram-copy>span { font-size:12px; color:var(--muted); }
+.closet-instagram svg { width:20px; height:20px; margin-left:auto; flex-shrink:0; fill:none; stroke:var(--blue); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.closet-instagram:hover { border-color:var(--blue); transform:translateY(-3px); }
+@media(max-width:400px) { .closet-instagram { gap:12px; padding:16px; } .closet-instagram-copy strong { font-size:17px; } }
 .closet-brand { display:flex; flex-direction:column; justify-content:space-between; min-height:420px; padding:32px; background:#0969ff; color:#fff; }
 .closet-label { font:10px/1.6 var(--mono); text-transform:uppercase; letter-spacing:.1em; }
 .closet-brand strong { font-size:clamp(60px,6vw,90px); line-height:.88; letter-spacing:-.07em; padding:42px 0; }
