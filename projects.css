@@ -1,5 +1,8 @@
 /* Shared featured-project visuals for Home and Projects. */
-.academic-intro { color:var(--muted); font-size:15px; line-height:1.7; max-width:760px; margin:-16px 0 36px; }
+.projects-intro { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:clamp(32px,6vw,96px); }
+.projects-intro h1 { color:var(--blue); margin:0; }
+.projects-intro>p:last-child { max-width:620px; margin:0; font-size:18px; line-height:1.65; }
+@media (max-width:720px) { .projects-intro { grid-template-columns:1fr; gap:28px; } .projects-intro>p:last-child { font-size:16px; } }
 .academic-list article { grid-template-columns:42px minmax(0,1fr) minmax(0,1fr) 100px; gap:24px; }
 .academic-list h2 { line-height:1.35; }
 .academic-list div p { line-height:1.6; }
