@@ -16,18 +16,18 @@ html[data-theme="dark"] .hero-topline { color:var(--ink); }
 html[data-theme="dark"] .portrait-placeholder,html[data-theme="dark"] .portrait-placeholder figcaption,html[data-theme="dark"] .info-photo figcaption { background:transparent; }
 html[data-theme="dark"] .portrait-placeholder figcaption,html[data-theme="dark"] .info-photo figcaption,html[data-theme="dark"] .quiet-link { color:var(--muted); }
 html[data-theme="dark"] .site-footer,html[data-theme="dark"] .preview-black,html[data-theme="dark"] .tile-projects { background:#08090b; }
-html[data-theme="dark"] .creator-banner,html[data-theme="dark"] .social-band,html[data-theme="dark"] .tile-ugc,html[data-theme="dark"] .preview-blue { background:#075ce0; }
-html[data-theme="dark"] .creator-banner:hover { background:#064fc4; }
+html[data-theme="dark"] .social-band,html[data-theme="dark"] .preview-blue { background:#075ce0; }
+
 html[data-theme="dark"] .preview-light { background:#182c4d; }
 html[data-theme="dark"] .image-paper { color:#0b0b0d; }
-html[data-theme="dark"] .ugc-hero { background:radial-gradient(circle at 78% 45%,#182c4d 0,transparent 32%); }
+
 html[data-theme="dark"] .instagram-link { background:var(--paper); color:var(--ink); }
 html[data-theme="dark"] .button { background:#075ce0; }
 html[data-theme="dark"] .academic-list article { border-bottom-color:var(--line); }
 @media (max-width:720px) { .theme-toggle { margin-left:12px; width:32px; height:32px; font-size:20px; } }
 @media (max-width:360px) { .site-header { padding-inline:12px; } nav { gap:12px; } }
 /* Real decorative elements keep separators identical on every page. */
-/* Keep all four page links and the theme control available on narrow screens. */
+/* Keep all three page links and the theme control available on narrow screens. */
 @media (max-width:480px) {
   .site-header { height:auto; min-height:86px; flex-wrap:wrap; padding:12px 20px; gap:14px 0; }
   .site-header .wordmark { flex-basis:100%; }
